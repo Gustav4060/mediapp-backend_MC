@@ -19,17 +19,13 @@ class MediappBackendApplicationTests {
 	@Autowired
 	private BCryptPasswordEncoder bcrypt;
 	
-	@Test
-	void escenario1() {		
-		Usuario us = new Usuario();
-		us.setIdUsuario(3);
-		us.setUsername("gustav4060eps@gmail.com");
-		us.setPassword(bcrypt.encode("123"));
-		us.setEnabled(true);
-		
-		Usuario retorno = repo.save(us);
-		assertTrue(retorno.getPassword().equals(us.getPassword()));
-	}	
-	
+	/*
+	 * @Test void escenario1() { Usuario us = new Usuario(); us.setIdUsuario(3);
+	 * us.setUsername("gustav4060eps@gmail.com");
+	 * us.setPassword(bcrypt.encode("123")); us.setEnabled(true);
+	 * 
+	 * Usuario retorno = repo.save(us);
+	 * assertTrue(retorno.getPassword().equals(us.getPassword())); }
+	 */
 
 }
